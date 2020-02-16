@@ -26,10 +26,10 @@ class _HomeScreenState extends State<HomeScreen> {
           Card(
             child: InkWell(
               child: ListTile(
-                title: Text(
+                title: Hero(tag: 'title_${i.name}', child: Text(
                   i.displayName,
                   style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
-                ),
+                ),),
                 subtitle: Text('${i.amount} dialetos'),
               ),
               onTap: () {
