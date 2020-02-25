@@ -23,5 +23,4 @@ class Region {
 
     return jsonDecode(dialectPage.body);
   }
-
 }

@@ -30,7 +30,9 @@ class _RegionScreenState extends State<RegionScreen> {
             _buildDialects(snapshot.data);
             return Scaffold(
               appBar: AppBar(
-                title: Hero(tag: 'title_${widget.region.name}', child: Text(widget.region.displayName.toUpperCase(),),),
+                title: Text(
+                  widget.region.displayName.toUpperCase(),
+                ),
               ),
               body: ListView(
                 children: dialects,
